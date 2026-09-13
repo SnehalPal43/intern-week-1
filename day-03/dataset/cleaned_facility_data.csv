@@ -1,0 +1,8 @@
+facility_id,location,cleanliness_score,odor_score,waste_level,water_availability,footfall,complaints,inspection_date
+F101,Downtown,85.5,2.1,Low,Yes,1200,2.0,2026-06-01
+F102,Suburbs,60.0,7.5,High,No,450,12.0,2026-06-02
+F103,Uptown,90.2,1.0,Low,Yes,1500,1.0,2026-06-03
+F104,Downtown,40.1,8.9,Critical,No,300,25.0,2026-06-04
+F105,Suburbs,75.0,4.0,Medium,Yes,800,5.0,2026-06-05
+F106,Uptown,80.25,3.2,Low,Yes,950,0.0,2026-06-06
+F107,Downtown,95.0,0.5,Low,Yes,1800,0.0,2026-06-07
