@@ -1,0 +1,15 @@
+--- Model Evaluation Metrics ---
+
+1. Logistic Regression:
+- Accuracy: 0.50
+- Precision: 1.00
+- Recall: 0.50
+- F1 Score: 0.67
+
+2. Random Forest Classifier:
+- Accuracy: 1.00
+- Precision: 1.00
+- Recall: 1.00
+- F1 Score: 1.00
+
+Conclusion: Random Forest performed better due to handling complex non-linear patterns in the facility dataset.

@@ -1,0 +1,9 @@
+facility_id,location,cleanliness_score,odor_score,waste_level,complaints,footfall,hours_since_cleaning,hygiene_risk
+F101,Downtown,85.5,2.1,Low,2,1200,4,0
+F102,Suburbs,60.0,7.5,High,12,450,24,1
+F103,Uptown,90.2,1.0,Low,1,1500,2,0
+F104,Downtown,40.1,8.9,Critical,25,300,48,1
+F105,Suburbs,75.0,4.0,Medium,5,800,12,0
+F106,Uptown,55.0,6.5,High,10,950,30,1
+F107,Downtown,95.0,0.5,Low,0,1800,1,0
+F108,Suburbs,48.0,8.0,Critical,18,400,36,1
