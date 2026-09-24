@@ -1,5 +1,7 @@
 # Preprocessing 
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
@@ -15,6 +17,14 @@ def preprocess_data(file_path):
     df['location'] = label_encoder.fit_transform(df['location'])
     df['waste_level'] = label_encoder.fit_transform(df['waste_level'])
     
+    # EDA Visualization: Correlation Heatmap
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(df.select_dtypes(include=['float64', 'int64']).corr(), annot=True, cmap='coolwarm', fmt='.2f')
+    plt.title('Feature Correlation Heatmap - Day 4')
+    plt.tight_layout()
+    plt.savefig('evaluation/correlation_heatmap.png')
+    plt.close()
+    
     # Define features (X) and target label (y)
     X = df[['location', 'cleanliness_score', 'odor_score', 'waste_level', 'complaints', 'footfall', 'hours_since_cleaning']]
     y = df['hygiene_risk']
@@ -22,7 +32,7 @@ def preprocess_data(file_path):
     # Split dataset into training and testing sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
-    print("Preprocessing completed successfully!")
+    print("Preprocessing and EDA visualization completed successfully!")
     return X_train, X_test, y_train, y_test
 
 if __name__ == "__main__":
