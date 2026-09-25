@@ -1,0 +1,16 @@
+=== SMART HYGIENE RISK MODEL PERFORMANCE REPORT ===
+
+1. Logistic Regression Accuracy: 0.949748743718593
+
+2. Random Forest Accuracy: 0.8944723618090452
+
+=== RANDOM FOREST CLASSIFICATION REPORT ===
+              precision    recall  f1-score   support
+
+        High       0.93      0.90      0.91        58
+         Low       0.91      0.90      0.90        58
+      Medium       0.86      0.89      0.88        83
+
+    accuracy                           0.89       199
+   macro avg       0.90      0.89      0.90       199
+weighted avg       0.90      0.89      0.89       199
